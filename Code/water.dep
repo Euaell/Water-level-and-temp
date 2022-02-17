@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>2165332137</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\lcd.h</file>
+            <file>$PROJ_DIR$\uart.h</file>
+            <file>$PROJ_DIR$\lcd.c</file>
+            <file>$PROJ_DIR$\adc.c</file>
+            <file>$PROJ_DIR$\system.h</file>
+            <file>$PROJ_DIR$\system.c</file>
+            <file>$PROJ_DIR$\uart.c</file>
+            <file>$PROJ_DIR$\adc.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\water.hex</file>
+            <file>$PROJ_DIR$\Debug\Obj\lcd.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\system.o</file>
+            <file>$PROJ_DIR$\Debug\Exe\water.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\adc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.o</file>
+            <file>$TOOLKIT_DIR$\inc\NXP\iolpc2148.h</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\List\water.map</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$TOOLKIT_DIR$\config\generic_cortex.icf</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\io_macros.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16 22 9 2 6 3</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 13 18</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lcd.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16 22 2</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16 22</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\system.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16 22</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 15</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16 22</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\water.hex</name>
+            <inputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\water.out</name>
+            <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 10</file>
+                </tool>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 18</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 20 19 17 23 21 14 11 1 12 15</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\Debug\Exe\water.out</name>
+            <tool>OBJCOPY</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

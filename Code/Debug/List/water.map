@@ -1,0 +1,267 @@
+###############################################################################
+#
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  18/Feb/2022  00:12:47
+# Copyright 2007-2021 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\euael\OneDrive\Desktop\Interface\Water level and
+#        temp\Code\Debug\Exe\water.out
+#    Map file     =
+#        C:\Users\euael\OneDrive\Desktop\Interface\Water level and
+#        temp\Code\Debug\List\water.map
+#    Command line =
+#        -f "C:\Users\euael\OneDrive\Desktop\Interface\Water level and
+#        temp\Code\Debug\Exe\water.out.rsp"
+#        ("C:\Users\euael\OneDrive\Desktop\Interface\Water level and
+#        temp\Code\Debug\Obj\adc.o"
+#        "C:\Users\euael\OneDrive\Desktop\Interface\Water level and
+#        temp\Code\Debug\Obj\lcd.o"
+#        "C:\Users\euael\OneDrive\Desktop\Interface\Water level and
+#        temp\Code\Debug\Obj\main.o"
+#        "C:\Users\euael\OneDrive\Desktop\Interface\Water level and
+#        temp\Code\Debug\Obj\system.o"
+#        "C:\Users\euael\OneDrive\Desktop\Interface\Water level and
+#        temp\Code\Debug\Obj\uart.o" --no_out_extension -o
+#        "C:\Users\euael\OneDrive\Desktop\Interface\Water level and
+#        temp\Code\Debug\Exe\water.out" --redirect _Printf=_PrintfFullNoMb
+#        --redirect _Scanf=_ScanfFullNoMb --map
+#        "C:\Users\euael\OneDrive\Desktop\Interface\Water level and
+#        temp\Code\Debug\List\water.map" --config "C:\Program Files\IAR
+#        Systems\Embedded Workbench 9.0\arm\CONFIG\generic_cortex.icf"
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x7'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block PROC_STACK with size = 0, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+
+No sections matched the following patterns:
+
+  rw  in "P2"
+
+
+  Section   Kind         Address   Size  Object
+  -------   ----         -------   ----  ------
+"A0":                              0x40
+  .intvec   ro code          0x0   0x40  vector_table_M.o [4]
+                          - 0x40   0x40
+
+"P1":                             0x7cc
+  .text     ro code         0x40  0x246  DblDiv.o [3]
+  .text     ro code        0x286    0x2  vectortrap_M.o [4]
+  .text     ro code        0x288  0x23c  lcd.o [1]
+  .text     ro code        0x4c4  0x108  main.o [1]
+  .text     ro code        0x5cc   0xcc  system.o [1]
+  .text     ro code        0x698   0xac  adc.o [1]
+  .text     ro code        0x744   0x1c  U32ToDbl.o [3]
+  .text     ro code        0x760   0x36  DblToS32.o [3]
+  .text     ro code        0x798   0x1e  cmain.o [4]
+  .text     ro code        0x7b6    0x4  low_level_init.o [2]
+  .text     ro code        0x7ba    0x4  exit.o [2]
+  .text     ro code        0x7c0    0xa  cexit.o [4]
+  .text     ro code        0x7cc   0x14  exit.o [5]
+  .text     ro code        0x7e0   0x1c  cstartup_M.o [4]
+  .rodata   const          0x7fc    0x8  main.o [1]
+  .rodata   const          0x804    0x8  main.o [1]
+                         - 0x80c  0x7cc
+
+"P2":                             0x400
+  CSTACK             0x2000'0000  0x400  <Block>
+    CSTACK  uninit   0x2000'0000  0x400  <Block tail>
+                   - 0x2000'0400  0x400
+
+Absolute sections, part 1 of 5:    0x1c
+  .noinit   uninit   0xe002'8004    0x4  lcd.o [1]
+  .noinit   uninit   0xe002'8008    0x4  lcd.o [1]
+  .noinit   uninit   0xe002'800c    0x4  lcd.o [1]
+  .noinit   uninit   0xe002'8010    0x4  lcd.o [1]
+  .noinit   uninit   0xe002'8014    0x4  lcd.o [1]
+  .noinit   uninit   0xe002'8018    0x4  lcd.o [1]
+  .noinit   uninit   0xe002'801c    0x4  lcd.o [1]
+                   - 0xe002'8020   0x1c
+
+Absolute sections, part 2 of 5:     0x8
+  .noinit   uninit   0xe002'c000    0x4  main.o [1]
+  .noinit   uninit   0xe002'c004    0x4  adc.o [1]
+                   - 0xe002'c008    0x8
+
+Absolute sections, part 3 of 5:     0x8
+  .noinit   uninit   0xe003'4000    0x4  adc.o [1]
+  .noinit   uninit   0xe003'4004    0x4  adc.o [1]
+                   - 0xe003'4008    0x8
+
+Absolute sections, part 4 of 5:    0x10
+  .noinit   uninit   0xe01f'c080    0x4  system.o [1]
+  .noinit   uninit   0xe01f'c084    0x4  system.o [1]
+  .noinit   uninit   0xe01f'c088    0x4  system.o [1]
+  .noinit   uninit   0xe01f'c08c    0x4  system.o [1]
+                   - 0xe01f'c090   0x10
+
+Absolute sections, part 5 of 5:     0x4
+  .noinit   uninit   0xe01f'c100    0x4  system.o [1]
+                   - 0xe01f'c104    0x4
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+        0x80c     0x7'ffff  0x7'f7f4
+  0x2000'0400  0x2000'ffff    0xfc00
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data  rw data
+                                                  (abs)
+    ------            -------  -------  -------  -------
+command line/config:
+    ----------------------------------------------------
+    Total:
+
+C:\Users\euael\OneDrive\Desktop\Interface\Water level and temp\Code\Debug\Obj: [1]
+    adc.o                 172                         12
+    lcd.o                 572                         28
+    main.o                264       16                 4
+    system.o              204                         20
+    ----------------------------------------------------
+    Total:              1'212       16                64
+
+dl7M_tln.a: [2]
+    exit.o                  4
+    low_level_init.o        4
+    ----------------------------------------------------
+    Total:                  8
+
+m7M_tl.a: [3]
+    DblDiv.o              582
+    DblToS32.o             54
+    U32ToDbl.o             28
+    ----------------------------------------------------
+    Total:                664
+
+rt7M_tl.a: [4]
+    cexit.o                10
+    cmain.o                30
+    cstartup_M.o           28
+    vector_table_M.o       64
+    vectortrap_M.o          2
+    ----------------------------------------------------
+    Total:                134
+
+shb_l.a: [5]
+    exit.o                 20
+    ----------------------------------------------------
+    Total:                 20
+
+    Gaps                    6
+    Linker created                        1'024
+--------------------------------------------------------
+    Grand Total:        2'044       16    1'024       64
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                     Address  Size  Type      Object
+-----                     -------  ----  ----      ------
+?main                       0x799        Code  Gb  cmain.o [4]
+BusFault_Handler            0x287        Code  Wk  vectortrap_M.o [4]
+CSTACK$$Base          0x2000'0000         --   Gb  - Linker created -
+CSTACK$$Limit         0x2000'0400         --   Gb  - Linker created -
+DebugMon_Handler            0x287        Code  Wk  vectortrap_M.o [4]
+HardFault_Handler           0x287        Code  Wk  vectortrap_M.o [4]
+MemManage_Handler           0x287        Code  Wk  vectortrap_M.o [4]
+NMI_Handler                 0x287        Code  Wk  vectortrap_M.o [4]
+PendSV_Handler              0x287        Code  Wk  vectortrap_M.o [4]
+Region$$Table$$Base           0x0         --   Gb  - Linker created -
+Region$$Table$$Limit          0x0         --   Gb  - Linker created -
+SVC_Handler                 0x287        Code  Wk  vectortrap_M.o [4]
+SysTick_Handler             0x287        Code  Wk  vectortrap_M.o [4]
+UsageFault_Handler          0x287        Code  Wk  vectortrap_M.o [4]
+_A_AD0CR              0xe003'4000   0x4  Data  Gb  adc.o [1]
+_A_AD0GDR             0xe003'4004   0x4  Data  Gb  adc.o [1]
+_A_IO0CLR             0xe002'800c   0x4  Data  Gb  lcd.o [1]
+_A_IO0DIR             0xe002'8008   0x4  Data  Gb  lcd.o [1]
+_A_IO0SET             0xe002'8004   0x4  Data  Gb  lcd.o [1]
+_A_IO1CLR             0xe002'801c   0x4  Data  Gb  lcd.o [1]
+_A_IO1DIR             0xe002'8018   0x4  Data  Gb  lcd.o [1]
+_A_IO1PIN             0xe002'8010   0x4  Data  Gb  lcd.o [1]
+_A_IO1SET             0xe002'8014   0x4  Data  Gb  lcd.o [1]
+_A_PINSEL0            0xe002'c000   0x4  Data  Gb  main.o [1]
+_A_PINSEL1            0xe002'c004   0x4  Data  Gb  adc.o [1]
+_A_PLLCFG             0xe01f'c084   0x4  Data  Gb  system.o [1]
+_A_PLLCON             0xe01f'c080   0x4  Data  Gb  system.o [1]
+_A_PLLFEED            0xe01f'c08c   0x4  Data  Gb  system.o [1]
+_A_PLLSTAT            0xe01f'c088   0x4  Data  Gb  system.o [1]
+_A_VPBDIV             0xe01f'c100   0x4  Data  Gb  system.o [1]
+__aeabi_d2iz                0x761        Code  Gb  DblToS32.o [3]
+__aeabi_ddiv                 0x41        Code  Gb  DblDiv.o [3]
+__aeabi_ui2d                0x745        Code  Gb  U32ToDbl.o [3]
+__cmain                     0x799        Code  Gb  cmain.o [4]
+__exit                      0x7cd  0x14  Code  Gb  exit.o [5]
+__iar_program_start         0x7e1        Code  Gb  cstartup_M.o [4]
+__low_level_init            0x7b7   0x4  Code  Gb  low_level_init.o [2]
+__vector_table                0x0        Data  Gb  vector_table_M.o [4]
+_call_main                  0x7a5        Code  Gb  cmain.o [4]
+_exit                       0x7c1        Code  Gb  cexit.o [4]
+adc_init                    0x699  0x4a  Code  Gb  adc.o [1]
+adc_read                    0x6e3  0x56  Code  Gb  adc.o [1]
+clock_init                  0x5cd  0xcc  Code  Gb  system.o [1]
+delay                       0x4bd   0x8  Code  Gb  lcd.o [1]
+delay1                      0x4c5   0xc  Code  Gb  main.o [1]
+exit                        0x7bb   0x4  Code  Gb  exit.o [2]
+lcd_backlight               0x3ef  0x2e  Code  Gb  lcd.o [1]
+lcd_command                 0x289  0x3c  Code  Gb  lcd.o [1]
+lcd_data                    0x2c5  0x42  Code  Gb  lcd.o [1]
+lcd_gotoXY                  0x307  0x2c  Code  Gb  lcd.o [1]
+lcd_init                    0x36f  0x80  Code  Gb  lcd.o [1]
+lcd_put                     0x333  0x1a  Code  Gb  lcd.o [1]
+lcd_write                   0x34d  0x22  Code  Gb  lcd.o [1]
+main                        0x4d1  0xda  Code  Gb  main.o [1]
+put_int                     0x441  0x7c  Code  Gb  lcd.o [1]
+
+
+[1] = C:\Users\euael\OneDrive\Desktop\Interface\Water level and temp\Code\Debug\Obj
+[2] = dl7M_tln.a
+[3] = m7M_tl.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  2'044 bytes of readonly  code memory
+     16 bytes of readonly  data memory
+  1'024 bytes of readwrite data memory (+ 64 absolute)
+
+Errors: none
+Warnings: none

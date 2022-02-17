@@ -1,0 +1,13 @@
+# ninja log v5
+1	506	6668354303739909	C:/Users/euael/OneDrive/Desktop/Interface/Water level and temp/Code/Debug/Obj/lcd.o	78100f98d05011d0
+35	598	6668354304561521	C:/Users/euael/OneDrive/Desktop/Interface/Water level and temp/Code/Debug/Obj/adc.o	1e5bcb279b031763
+65	661	6668354305298603	C:/Users/euael/OneDrive/Desktop/Interface/Water level and temp/Code/Debug/Obj/system.o	efedb84ca7760737
+511	706	6668354305762693	C:/Users/euael/OneDrive/Desktop/Interface/Water level and temp/Code/Debug/Obj/main.o	11ec7e3b7379c596
+144	731	6668354305960731	C:/Users/euael/OneDrive/Desktop/Interface/Water level and temp/Code/Debug/Obj/uart.o	3ec64b8688786201
+738	979	6668354308471526	C:/Users/euael/OneDrive/Desktop/Interface/Water level and temp/Code/Debug/Exe/water.out	2bc93e4fe81217e7
+24	238	6668355670586579	C:/Users/euael/OneDrive/Desktop/Interface/Water level and temp/Code/Debug/Obj/adc.o	1e5bcb279b031763
+2	257	6668355670829945	C:/Users/euael/OneDrive/Desktop/Interface/Water level and temp/Code/Debug/Obj/lcd.o	78100f98d05011d0
+86	331	6668355671363373	C:/Users/euael/OneDrive/Desktop/Interface/Water level and temp/Code/Debug/Obj/main.o	11ec7e3b7379c596
+44	338	6668355671444636	C:/Users/euael/OneDrive/Desktop/Interface/Water level and temp/Code/Debug/Obj/uart.o	3ec64b8688786201
+345	476	6668355673060013	C:/Users/euael/OneDrive/Desktop/Interface/Water level and temp/Code/Debug/Exe/water.out	2bc93e4fe81217e7
+2	22	6668357395637145	C:/Users/euael/OneDrive/Desktop/Interface/Water level and temp/Code/Debug/Exe/water.hex	4b216e7346a8e0f
